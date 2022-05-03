@@ -1,0 +1,210 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Simpson"," ","1","/","3"," ","Rule"}],
+"Title",TextAlignment -> Center,ExpressionUUID -> "99ccb2ef-cc5c-4915-a1bb-467570743300",
+TextJustification -> 0],Cell[
+TextData[{"Q1",StyleBox[RowBox[{" ","\[Integral]"}]],"1","/","5","+","3x"," ","dx"," ","from"," ","0"," ","to"," ","1"}],
+"Text",ExpressionUUID -> "60855691-8613-45b2-b47d-76a2724d5c5e"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],"=",RowBox[{"1","/",RowBox[
+{"(",RowBox[{"5","+",RowBox[{"3"," ","x"}]}],")"}]}]}],";"}],"\n",RowBox[{RowBox[
+{"a","=","0"}],";"}],"\n",RowBox[{RowBox[{"b","=","1"}],";"}],"\n",RowBox[{RowBox[
+{"n","=","6"}],";"}],"\n",RowBox[{RowBox[{"h","=",RowBox[{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","n"}]}],";"}],"\n",RowBox[
+{RowBox[{"sol","=",RowBox[{RowBox[{"(",RowBox[{"h","/","3"}],")"}],"*",RowBox[{"(",RowBox[
+{RowBox[{"f","[","a","]"}],"+",RowBox[{"4","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[
+{"{",RowBox[{"i",",",RowBox[{"a","+","h"}],",",RowBox[{"b","-","h"}],",",RowBox[{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[
+{"2","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+",RowBox[{"2","h"}]}],",",RowBox[{"b","-",RowBox[{"2","h"}]}],",",RowBox[
+{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[{"f","[","b","]"}]}],")"}]}]}],";"}],"\n",RowBox[
+{RowBox[{"in","=",RowBox[{"N","[",RowBox[{"Integrate","[",RowBox[{RowBox[{"1","/",RowBox[
+{"(",RowBox[{"5","+",RowBox[{"3","x"}]}],")"}]}],",",RowBox[{"{",RowBox[{"x",",","0",",","1"}],"}"}]}],"]"}],"]"}]}],";"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Exact Value of Integral is: \"",",","in"}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Approximate value of Integral is: \"",",",RowBox[{"N","[","sol","]"}]}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Error in Integral is: \"",",",RowBox[{"Abs","[",RowBox[{"in","-",RowBox[
+{"N","[","sol","]"}]}],"]"}]}],"]"}]}],"Input",CellLabel -> "In[227]:= ",ExpressionUUID -> "5c3bebfb-0d9f-40a8-b7c2-8a7e4ae30403"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Exact Value of Integral is: \"","\[InvisibleSpace]","0.15666787641524527`"}],
+SequenceForm["Exact Value of Integral is: ",0.15666787641524527`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "11a255d6-ee57-42b1-8058-b9151b4b91c3"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Approximate value of Integral is: \"","\[InvisibleSpace]","0.15666879416879417`"}],
+SequenceForm["Approximate value of Integral is: ",0.15666879416879417`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "ae48222b-6db8-4d00-bf10-3bb63ae73483"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Error in Integral is: \"","\[InvisibleSpace]","9.177535489068855`*^-7"}],
+SequenceForm["Error in Integral is: ",9.177535489068855`*^-7],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "fbcac626-875b-4877-ae7a-4d97fcb49b7d"]},
+Open],ExpressionUUID -> "f690d87b-00a9-4fc3-aedc-67a3614598c3"],Cell[
+TextData[{"Q2",StyleBox[
+RowBox[{" ","\[Integral]"}]],"1","/","x","^","2"," ","dx"," ","from"," ","1"," ","to"," ","5"}],
+"Text",ExpressionUUID -> "ead6d796-d6b9-4722-8217-d1f33fd58b74"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],"=",RowBox[{"1","/",RowBox[
+{"x","^","2"}]}]}],";"}],"\n",RowBox[{RowBox[{"a","=","1"}],";"}],"\n",RowBox[{RowBox[
+{"b","=","5"}],";"}],"\n",RowBox[{RowBox[{"n","=","10"}],";"}],"\n",RowBox[{RowBox[
+{"h","=",RowBox[{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","n"}]}],";"}],"\n",RowBox[
+{RowBox[{"sol","=",RowBox[{RowBox[{"(",RowBox[{"h","/","3"}],")"}],"*",RowBox[{"(",RowBox[
+{RowBox[{"f","[","a","]"}],"+",RowBox[{"4","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[
+{"{",RowBox[{"i",",",RowBox[{"a","+","h"}],",",RowBox[{"b","-","h"}],",",RowBox[{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[
+{"2","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+",RowBox[{"2","h"}]}],",",RowBox[{"b","-",RowBox[{"2","h"}]}],",",RowBox[
+{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[{"f","[","b","]"}]}],")"}]}]}],";"}],"\n",RowBox[
+{RowBox[{"in","=",RowBox[{"Integrate","[",RowBox[{RowBox[{"1","/",RowBox[{"x","^","2"}]}],",",RowBox[
+{"{",RowBox[{"x",",","1",",","5"}],"}"}]}],"]"}]}],";"}],"\n",RowBox[{"Print","[",RowBox[
+{"\"Exact Value of Integral is: \"",",","in"}],"]"}],"\n",RowBox[{"Print","[",RowBox[
+{"\"Approximate value of Integral is: \"",",",RowBox[{"N","[","sol","]"}]}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Error in Integral is: \"",",",RowBox[{"Abs","[",RowBox[{"in","-",RowBox[
+{"N","[","sol","]"}]}],"]"}]}],"]"}]}],"Input",CellLabel -> "In[237]:= ",ExpressionUUID -> "903748f0-85fc-47f5-ab9e-34e87cbc0c1e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Exact Value of Integral is: \"","\[InvisibleSpace]",FractionBox[
+"4","5"]}],SequenceForm["Exact Value of Integral is: ",Rational[4,5]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "86c35417-930d-45d7-a0ae-6e958da25435"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Approximate value of Integral is: \"","\[InvisibleSpace]","0.8023043044337805`"}],
+SequenceForm["Approximate value of Integral is: ",0.8023043044337805`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "c78ebbaf-e96e-41fd-9dd5-29975d95d7e6"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Error in Integral is: \"","\[InvisibleSpace]","0.0023043044337804908`"}],
+SequenceForm["Error in Integral is: ",0.0023043044337804908`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "70c9008d-05a1-4bd3-be9a-3f8221607415"]},
+Open],ExpressionUUID -> "daee5d16-4d0e-4bf7-b90b-184e9b031e83"],Cell[
+TextData[{"Q3",StyleBox[
+RowBox[{" ","\[Integral]"}]],"e","^-","x","^","2"," ","from"," ","0"," ","to0",StyleBox[
+RowBox[{"."," "}]],"6"}],"Text",ExpressionUUID -> "d04c365a-79dd-49c6-b70e-75291d90f18b"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],"=",RowBox[{"Exp","[",RowBox[
+{"-",RowBox[{"x","^","2"}]}],"]"}]}],";"}],"\n",RowBox[{RowBox[{"a","=","0"}],";"}],"\n",RowBox[
+{RowBox[{"b","=",".6"}],";"}],"\n",RowBox[{RowBox[{"n","=","10"}],";"}],"\n",RowBox[
+{RowBox[{"h","=",RowBox[{RowBox[{"(",RowBox[{"b","-","a"}],")"}],"/","n"}]}],";"}],"\n",RowBox[
+{RowBox[{"sol","=",RowBox[{RowBox[{"(",RowBox[{"h","/","3"}],")"}],"*",RowBox[{"(",RowBox[
+{RowBox[{"f","[","a","]"}],"+",RowBox[{"4","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[
+{"{",RowBox[{"i",",",RowBox[{"a","+","h"}],",",RowBox[{"b","-","h"}],",",RowBox[{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[
+{"2","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+",RowBox[{"2","h"}]}],",",RowBox[{"b","-",RowBox[{"2","h"}]}],",",RowBox[
+{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[{"f","[","b","]"}]}],")"}]}]}],";"}],"\n",RowBox[
+{RowBox[{"in","=",RowBox[{"Integrate","[",RowBox[{RowBox[{"Exp","[",RowBox[{"-",RowBox[
+{"x","^","2"}]}],"]"}],",",RowBox[{"{",RowBox[{"x",",","0",",",".6"}],"}"}]}],"]"}]}],";"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Exact Value of Integral is: \"",",","in"}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Approximate value of Integral is: \"",",",RowBox[{"N","[","sol","]"}]}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Error in Integral is: \"",",",RowBox[{"Abs","[",RowBox[{"in","-",RowBox[
+{"N","[","sol","]"}]}],"]"}]}],"]"}]}],"Input",CellLabel -> "In[247]:= ",ExpressionUUID -> "e65d1591-ae87-409d-9337-4412379952e4"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Exact Value of Integral is: \"","\[InvisibleSpace]","0.5351535268080787`"}],
+SequenceForm["Exact Value of Integral is: ",0.5351535268080787`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "6f9a690d-f698-4344-a04c-f13956db12f0"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Approximate value of Integral is: \"","\[InvisibleSpace]","0.5351538025441079`"}],
+SequenceForm["Approximate value of Integral is: ",0.5351538025441079`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "69acc7e4-caad-4b16-a336-2c0783019fa3"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Error in Integral is: \"","\[InvisibleSpace]","2.75736029231588`*^-7"}],
+SequenceForm["Error in Integral is: ",2.75736029231588`*^-7],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "4e04b3e6-914d-4a87-9b16-6e6d6ea3a101"]},Open],ExpressionUUID -> "e99cb23a-e2f9-46d1-8c42-024db080ecc0"],Cell[
+TextData[
+{"Q",StyleBox[RowBox[{" ","\[Integral]"}]],"1","/","1","+","x","^","2"," ","from"," ","0"," ","to"," ","0",".","6"," ","and"," ","h","=","0",".","1"}],
+"Text",ExpressionUUID -> "83f96f09-85e8-49a4-a743-4e1a691bd0e0"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],"=",RowBox[{"1","/",RowBox[
+{"(",RowBox[{"1","+",RowBox[{"x","^","2"}]}],")"}]}]}],";"}],"\n",RowBox[{RowBox[
+{"a","=","0"}],";"}],"\n",RowBox[{RowBox[{"b","=","0.6"}],";"}],"\n",RowBox[{RowBox[
+{"h","=","0.1"}],";"}],"\n",RowBox[{RowBox[{"sol","=",RowBox[{RowBox[{"(",RowBox[
+{"h","/","3"}],")"}],"*",RowBox[{"(",RowBox[{RowBox[{"f","[","a","]"}],"+",RowBox[
+{"4","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+","h"}],",",RowBox[{"b","-","h"}],",",RowBox[{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[
+{"2","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+",RowBox[{"2","h"}]}],",",RowBox[{"b","-",RowBox[{"2","h"}]}],",",RowBox[
+{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[{"f","[","b","]"}]}],")"}]}]}],";"}],"\n",RowBox[
+{RowBox[{"in","=",RowBox[{"N","[",RowBox[{"Integrate","[",RowBox[{RowBox[{"1","/",RowBox[
+{"(",RowBox[{"1","+",RowBox[{"x","^","2"}]}],")"}]}],",",RowBox[{"{",RowBox[{"x",",","0",",","0.6"}],"}"}]}],"]"}],"]"}]}],";"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Exact Value of Integral is: \"",",","in"}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Approximate value of Integral is: \"",",",RowBox[{"N","[","sol","]"}]}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Error in Integral is: \"",",",RowBox[{"Abs","[",RowBox[{"in","-",RowBox[
+{"N","[","sol","]"}]}],"]"}]}],"]"}]}],"Input",CellLabel -> "In[257]:= ",ExpressionUUID -> "e6b23354-b3bf-4b69-955c-b63a60c53ad7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Exact Value of Integral is: \"","\[InvisibleSpace]","0.5404195002705797`"}],
+SequenceForm["Exact Value of Integral is: ",0.5404195002705797`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "1c13bfa6-b6e1-4f3a-91cd-d80974752796"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Approximate value of Integral is: \"","\[InvisibleSpace]","0.5404209927334875`"}],
+SequenceForm["Approximate value of Integral is: ",0.5404209927334875`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "04745f94-409b-40a5-a745-737983e632e7"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Error in Integral is: \"","\[InvisibleSpace]","1.4924629078150176`*^-6"}],
+SequenceForm["Error in Integral is: ",1.4924629078150176`*^-6],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "f15b1a2a-8c17-494e-a3af-6947c1950c59"]},
+Open],ExpressionUUID -> "36418bfd-9567-4fb7-bfe1-7d4ce3a40701"],Cell[
+TextData[{"Q4",StyleBox[
+RowBox[{" ","\[Integral]"}]],"x","^","2","/","1","+","x","^","3"," ","dx",StyleBox[
+RowBox[{" "," "}]],"from"," ","0"," ","to"," ","1"," ","and"," ","h","=","0",".","25"}],
+"Text",ExpressionUUID -> "0345ec61-5be6-4bda-9739-7e843a7a90c8"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],"=",RowBox[{RowBox[{"x","^","2"}],"/",RowBox[
+{"(",RowBox[{"1","+",RowBox[{"x","^","3"}]}],")"}]}]}],";"}],"\n",RowBox[{RowBox[
+{"a","=","0"}],";"}],"\n",RowBox[{RowBox[{"b","=","1"}],";"}],"\n",RowBox[{RowBox[
+{"h","=","0.25"}],";"}],"\n",RowBox[{RowBox[{"sol","=",RowBox[{RowBox[{"(",RowBox[
+{"h","/","3"}],")"}],"*",RowBox[{"(",RowBox[{RowBox[{"f","[","a","]"}],"+",RowBox[
+{"4","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+","h"}],",",RowBox[{"b","-","h"}],",",RowBox[{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[
+{"2","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+",RowBox[{"2","h"}]}],",",RowBox[{"b","-",RowBox[{"2","h"}]}],",",RowBox[
+{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[{"f","[","b","]"}]}],")"}]}]}],";"}],"\n",RowBox[
+{RowBox[{"in","=",RowBox[{"N","[",RowBox[{"Integrate","[",RowBox[{RowBox[{RowBox[
+{"x","^","2"}],"/",RowBox[{"(",RowBox[{"1","+",RowBox[{"x","^","3"}]}],")"}]}],",",RowBox[
+{"{",RowBox[{"x",",","0",",","1"}],"}"}]}],"]"}],"]"}]}],";"}],"\n",RowBox[{"Print","[",RowBox[
+{"\"Exact Value of Integral is: \"",",","in"}],"]"}],"\n",RowBox[{"Print","[",RowBox[
+{"\"Approximate value of Integral is: \"",",",RowBox[{"N","[","sol","]"}]}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Error in Integral is: \"",",",RowBox[{"Abs","[",RowBox[{"in","-",RowBox[
+{"N","[","sol","]"}]}],"]"}]}],"]"}]}],"Input",CellLabel -> "In[266]:= ",ExpressionUUID -> "835d8477-2d28-4814-8f87-47f194640939"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Exact Value of Integral is: \"","\[InvisibleSpace]","0.23104906018664842`"}],
+SequenceForm["Exact Value of Integral is: ",0.23104906018664842`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "50778af5-432a-4874-9d03-0feced2e3d58"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Approximate value of Integral is: \"","\[InvisibleSpace]","0.23108465608465606`"}],
+SequenceForm["Approximate value of Integral is: ",0.23108465608465606`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "1a02b7ae-fe20-4633-91be-d2fef1cb115a"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Error in Integral is: \"","\[InvisibleSpace]","0.00003559589800763985`"}],
+SequenceForm["Error in Integral is: ",3.559589800763985`*^-5],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "6b65ac08-66b2-4af4-8272-b01e3e7ce9ba"]},
+Open],ExpressionUUID -> "081708a1-6dac-4198-98eb-d0673e7c1aa4"],Cell[
+TextData[{"Q4",StyleBox[
+RowBox[{" ","\[Integral]"}]],"sin"," ","x"," ","dx",StyleBox[RowBox[{" "," "}]],"from"," ","0"," ","to",StyleBox[
+RowBox[{" ","\[Pi]"}]]}],"Text",ExpressionUUID -> "72bad44d-631a-4128-87bd-9c6bc35b6d02"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{RowBox[{"f","[","x_","]"}],"=",RowBox[{"Sin","[","x","]"}]}],";"}],"\n",RowBox[
+{RowBox[{"a","=","0"}],";"}],"\n",RowBox[{RowBox[{"b","=","Pi"}],";"}],"\n",RowBox[
+{RowBox[{"n","=","8"}],";"}],"\n",RowBox[{RowBox[{"h","=",RowBox[{RowBox[{"(",RowBox[
+{"b","-","a"}],")"}],"/","n"}]}],";"}],"\n",RowBox[{RowBox[{"sol","=",RowBox[{RowBox[
+{"(",RowBox[{"h","/","3"}],")"}],"*",RowBox[{"(",RowBox[{RowBox[{"f","[","a","]"}],"+",RowBox[
+{"4","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+","h"}],",",RowBox[{"b","-","h"}],",",RowBox[{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[
+{"2","*",RowBox[{"Sum","[",RowBox[{RowBox[{"f","[","i","]"}],",",RowBox[{"{",RowBox[
+{"i",",",RowBox[{"a","+",RowBox[{"2","h"}]}],",",RowBox[{"b","-",RowBox[{"2","h"}]}],",",RowBox[
+{"2","*","h"}]}],"}"}]}],"]"}]}],"+",RowBox[{"f","[","b","]"}]}],")"}]}]}],";"}],"\n",RowBox[
+{RowBox[{"in","=",RowBox[{"Integrate","[",RowBox[{RowBox[{"Sin","[","x","]"}],",",RowBox[
+{"{",RowBox[{"x",",","0",",","Pi"}],"}"}]}],"]"}]}],";"}],"\n",RowBox[{"Print","[",RowBox[
+{"\"Exact Value of Integral is: \"",",","in"}],"]"}],"\n",RowBox[{"Print","[",RowBox[
+{"\"Approximate value of Integral is: \"",",",RowBox[{"N","[","sol","]"}]}],"]"}],"\n",RowBox[
+{"Print","[",RowBox[{"\"Error in Integral is: \"",",",RowBox[{"Abs","[",RowBox[{"in","-",RowBox[
+{"N","[","sol","]"}]}],"]"}]}],"]"}]}],"Input",CellLabel -> "In[295]:= ",ExpressionUUID -> "d3214936-06b2-4282-8fff-9fc03405b904"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Exact Value of Integral is: \"","\[InvisibleSpace]","2"}],
+SequenceForm["Exact Value of Integral is: ",2],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "f2c26c31-3bfb-48b4-9d25-08f9fb5e7888"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Approximate value of Integral is: \"","\[InvisibleSpace]","2.0002691699483877`"}],
+SequenceForm["Approximate value of Integral is: ",2.0002691699483877`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "9482ed4c-c712-4957-b5c3-d22095959c90"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Error in Integral is: \"","\[InvisibleSpace]","0.00026916994838765973`"}],
+SequenceForm["Error in Integral is: ",2.6916994838765973`*^-4],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "4b6c8b47-b5f5-4c3a-94c2-81a837a9b7d4"]},
+Open],ExpressionUUID -> "ef7a6d14-8104-4362-b9a1-fee8bf634fa7"]},Open],ExpressionUUID -> "6fb02d66-6876-45ff-85e1-9850c13cb004"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]

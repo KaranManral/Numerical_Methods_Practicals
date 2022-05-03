@@ -1,0 +1,112 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Lagrange",StyleBox[RowBox[{" "," "}]],"Interpolation"," ","Method"}],
+"Title",ExpressionUUID -> "4f7bee1d-49a0-47a9-a751-12c923c01f2e"],Cell[
+BoxData[""],
+"Input",CellLabel -> "In[22]:= ",ExpressionUUID -> "94d7dad2-7f1e-4167-a9dd-a17a38b954b7"],Cell[
+BoxData[
+""],"Input",CellLabel -> "In[23]:= ",ExpressionUUID -> "617fa977-c8e3-43ce-a52b-9025771cf1d5"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"xi","=",RowBox[{"{",RowBox[{RowBox[{"-","1"}],",","0",",","1",",","2"}],"}"}]}],";"}],"\n",RowBox[
+{RowBox[{"fi","=",RowBox[{"{",RowBox[{"5",",","1",",","1",",","11"}],"}"}]}],";"}],"\n",RowBox[
+{RowBox[{"n","=",RowBox[{"Length","[","xi","]"}]}],";"}],"\n",RowBox[{RowBox[{"For","[",RowBox[
+{RowBox[{"k","=","1"}],",",RowBox[{"k","\[LessEqual]","n"}],",",RowBox[{"k","++"}],",","\n",RowBox[
+{RowBox[{RowBox[{"Subscript","[",RowBox[{"L",",","k"}],"]"}],"[","x_","]"}],"=",RowBox[
+{RowBox[{"Product","[",RowBox[{RowBox[{RowBox[{"(",RowBox[{"x","-",RowBox[{"xi","[",RowBox[
+{"[","j","]"}],"]"}]}],")"}],"/",RowBox[{"(",RowBox[{RowBox[{"xi","[",RowBox[{"[","k","]"}],"]"}],"-",RowBox[
+{"xi","[",RowBox[{"[","j","]"}],"]"}]}],")"}]}],",",RowBox[{"{",RowBox[{"j",",","1",",",RowBox[
+{"k","-","1"}]}],"}"}]}],"]"}],"*",RowBox[{"Product","[",RowBox[{RowBox[{RowBox[{"(",RowBox[
+{"x","-",RowBox[{"xi","[",RowBox[{"[","j","]"}],"]"}]}],")"}],"/",RowBox[{"(",RowBox[
+{RowBox[{"xi","[",RowBox[{"[","k","]"}],"]"}],"-",RowBox[{"xi","[",RowBox[{"[","j","]"}],"]"}]}],")"}]}],",",RowBox[
+{"{",RowBox[{"j",",",RowBox[{"k","+","1"}],",","n"}],"}"}]}],"]"}]}]}]}],"]"}],";"}],"\n",RowBox[
+{RowBox[{RowBox[{"p","[","x_","]"}],"=",RowBox[{"Sum","[",RowBox[{RowBox[{RowBox[
+{RowBox[{"Subscript","[",RowBox[{"L",",","k"}],"]"}],"[","x","]"}],"*",RowBox[{"fi","[",RowBox[
+{"[","k","]"}],"]"}]}],",",RowBox[{"{",RowBox[{"k",",","1",",","n"}],"}"}]}],"]"}]}],";"}],"\n",RowBox[
+{RowBox[{"Print","[",RowBox[{"\"Lagrange Polynomial p(x) =\"",",",RowBox[{"p","[","x","]"}]}],"]"}],RowBox[
+{"Print","[",RowBox[{"\"Simplified polynomial p(x) =\"",",",RowBox[{"Simplify","[",RowBox[
+{"p","[","x","]"}],"]"}]}],"]"}]}],RowBox[{"\n","\n"}],RowBox[{"Print","[",RowBox[
+{"\"Approximate value of f at x=1.5 is \"",",",RowBox[{"p","[","1.5","]"}]}],"]"}]}],
+"Input",CellLabel -> "In[24]:= ",ExpressionUUID -> "c36d0bed-a6f9-4f95-92be-5eb3a6b7014e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Lagrange Polynomial p(x) =\"","\[InvisibleSpace]",RowBox[
+{RowBox[{RowBox[{"-",FractionBox["5","6"]}]," ",RowBox[{"(",RowBox[{"1","-","x"}],")"}]," ",RowBox[
+{"(",RowBox[{"2","-","x"}],")"}]," ","x"}],"+",RowBox[{FractionBox["1","2"]," ",RowBox[
+{"(",RowBox[{"1","-","x"}],")"}]," ",RowBox[{"(",RowBox[{"2","-","x"}],")"}]," ",RowBox[
+{"(",RowBox[{"1","+","x"}],")"}]}],"+",RowBox[{FractionBox["1","2"]," ",RowBox[{"(",RowBox[
+{"2","-","x"}],")"}]," ","x"," ",RowBox[{"(",RowBox[{"1","+","x"}],")"}]}],"+",RowBox[
+{FractionBox["11","6"]," ",RowBox[{"(",RowBox[{RowBox[{"-","1"}],"+","x"}],")"}]," ","x"," ",RowBox[
+{"(",RowBox[{"1","+","x"}],")"}]}]}]}],SequenceForm["Lagrange Polynomial p(x) =",
+Plus[Times[Rational[-5,6],Plus[1,Times[-1,x]],Plus[2,Times[-1,x]],x],Times[Rational[
+1,2],Plus[1,Times[-1,x]],Plus[2,Times[-1,x]],Plus[1,x]],Times[Rational[1,2],Plus[
+2,Times[-1,x]],x,Plus[1,x]],Times[Rational[11,6],Plus[-1,x],x,Plus[1,x]]]],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "bf3e8785-48cf-422e-b600-c487143fbe3e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Simplified polynomial p(x) =\"","\[InvisibleSpace]",RowBox[
+{"1","-",RowBox[{"3"," ","x"}],"+",RowBox[{"2"," ",SuperscriptBox["x","2"]}],"+",SuperscriptBox[
+"x","3"]}]}],SequenceForm["Simplified polynomial p(x) =",Plus[1,Times[-3,x],Times[
+2,Power[x,2]],Power[x,3]]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "5efab69a-25e1-4313-8647-17cb51d155e4"],Cell[
+BoxData[
+SuperscriptBox["Null","2"],StandardForm],"Output",CellLabel -> "Out[29]= ",ExpressionUUID -> "52639843-9f3b-49e3-b76b-9b874390ba33"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Approximate value of f at x=1.5 is \"","\[InvisibleSpace]","4.375`"}],
+SequenceForm["Approximate value of f at x=1.5 is ",4.375`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "653601c1-1127-4d33-8eaf-837de936c4fa"]},Open],ExpressionUUID -> "4a37341d-e4b1-4348-9389-fc4ee9557bb1"],Cell[
+BoxData[
+RowBox[{"Quit","[","]"}]],"Input",CellLabel -> "In[31]:= ",ExpressionUUID -> "bdf2aefe-8641-454e-ab59-7272e5e5e1a4"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"xi","=",RowBox[{"{",RowBox[{"4",",","5",",","7",",","10",",","15"}],"}"}]}],";",RowBox[
+{"fi","=",RowBox[{"{",RowBox[{"48",",","100",",","200",",","300",",","350"}],"}"}]}],";",RowBox[
+{"n","=",RowBox[{"Length","[","xi","]"}]}],";",RowBox[{"For","[",RowBox[{RowBox[{"k","=","1"}],",",RowBox[
+{"k","<=","n"}],",",RowBox[{"k","++"}],",",RowBox[{RowBox[{RowBox[{"Subscript","[",RowBox[
+{"L",",","k"}],"]"}],"[","x_","]"}],":=",RowBox[{RowBox[{"Product","[",RowBox[{RowBox[
+{RowBox[{"(",RowBox[{"x","-",RowBox[{"xi","[",RowBox[{"[","j","]"}],"]"}]}],")"}],"/",RowBox[
+{"(",RowBox[{RowBox[{"xi","[",RowBox[{"[","k","]"}],"]"}],"-",RowBox[{"xi","[",RowBox[
+{"[","j","]"}],"]"}]}],")"}]}],",",RowBox[{"{",RowBox[{"j",",","1",",",RowBox[{"k","-","1"}]}],"}"}]}],"]"}],"*",RowBox[
+{"Product","[",RowBox[{RowBox[{RowBox[{"(",RowBox[{"x","-",RowBox[{"xi","[",RowBox[
+{"[","j","]"}],"]"}]}],")"}],"/",RowBox[{"(",RowBox[{RowBox[{"xi","[",RowBox[{"[","k","]"}],"]"}],"-",RowBox[
+{"xi","[",RowBox[{"[","j","]"}],"]"}]}],")"}]}],",",RowBox[{"{",RowBox[{"j",",",RowBox[
+{"k","+","1"}],",","n"}],"}"}]}],"]"}]}]}]}],"]"}],";",RowBox[{RowBox[{"p","[","x_","]"}],"=",RowBox[
+{"Sum","[",RowBox[{RowBox[{RowBox[{RowBox[{"Subscript","[",RowBox[{"L",",","k"}],"]"}],"[","x","]"}],"*",RowBox[
+{"fi","[",RowBox[{"[","k","]"}],"]"}]}],",",RowBox[{"{",RowBox[{"k",",","1",",","n"}],"}"}]}],"]"}]}],";",RowBox[
+{RowBox[{"Print","[",RowBox[{"\"Lagrange Polynomial p(x) =\"",",",RowBox[{"p","[","x","]"}]}],"]"}],RowBox[
+{"Print","[",RowBox[{"\"Simplified polynomial p(x) =\"",",",RowBox[{"Simplify","[",RowBox[
+{"p","[","x","]"}],"]"}]}],"]"}],RowBox[{"Print","[",RowBox[{"\"Approximate value of f at x=6 is \"",",",RowBox[
+{"p","[","6","]"}]}],"]"}]}]}]],"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "7beca84b-b520-4ee9-a8f4-d4c40bb07838"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Lagrange Polynomial p(x) =\"","\[InvisibleSpace]",RowBox[
+{RowBox[{FractionBox["8","33"]," ",RowBox[{"(",RowBox[{"5","-","x"}],")"}]," ",RowBox[
+{"(",RowBox[{"7","-","x"}],")"}]," ",RowBox[{"(",RowBox[{"10","-","x"}],")"}]," ",RowBox[
+{"(",RowBox[{"15","-","x"}],")"}]}],"+",RowBox[{RowBox[{"(",RowBox[{"7","-","x"}],")"}]," ",RowBox[
+{"(",RowBox[{"10","-","x"}],")"}]," ",RowBox[{"(",RowBox[{"15","-","x"}],")"}]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","4"}],"+","x"}],")"}]}],"+",RowBox[{FractionBox["25","18"]," ",RowBox[
+{"(",RowBox[{"10","-","x"}],")"}]," ",RowBox[{"(",RowBox[{"15","-","x"}],")"}]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","5"}],"+","x"}],")"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","4"}],"+","x"}],")"}]}],"+",RowBox[
+{FractionBox["2","3"]," ",RowBox[{"(",RowBox[{"15","-","x"}],")"}]," ",RowBox[{"(",RowBox[
+{RowBox[{"-","7"}],"+","x"}],")"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","5"}],"+","x"}],")"}]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","4"}],"+","x"}],")"}]}],"+",RowBox[{FractionBox["7","88"]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","10"}],"+","x"}],")"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","7"}],"+","x"}],")"}]," ",RowBox[
+{"(",RowBox[{RowBox[{"-","5"}],"+","x"}],")"}]," ",RowBox[{"(",RowBox[{RowBox[{"-","4"}],"+","x"}],")"}]}]}]}],
+SequenceForm["Lagrange Polynomial p(x) =",Plus[Times[Rational[8,33],Plus[5,Times[
+-1,x]],Plus[7,Times[-1,x]],Plus[10,Times[-1,x]],Plus[15,Times[-1,x]]],Times[Plus[
+7,Times[-1,x]],Plus[10,Times[-1,x]],Plus[15,Times[-1,x]],Plus[-4,x]],Times[Rational[
+25,18],Plus[10,Times[-1,x]],Plus[15,Times[-1,x]],Plus[-5,x],Plus[-4,x]],Times[Rational[
+2,3],Plus[15,Times[-1,x]],Plus[-7,x],Plus[-5,x],Plus[-4,x]],Times[Rational[7,88],
+Plus[-10,x],Plus[-7,x],Plus[-5,x],Plus[-4,x]]]],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "417f769a-ed1e-4248-8123-89e86a8d7589"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Simplified polynomial p(x) =\"","\[InvisibleSpace]",RowBox[{FractionBox[
+"1","792"]," ",RowBox[{"(",RowBox[{RowBox[{"-","39000"}],"-",RowBox[{"17230"," ","x"}],"+",RowBox[
+{"13609"," ",SuperscriptBox["x","2"]}],"-",RowBox[{"1262"," ",SuperscriptBox["x",
+"3"]}],"+",RowBox[{"35"," ",SuperscriptBox["x","4"]}]}],")"}]}]}],SequenceForm["Simplified polynomial p(x) =",
+Times[Rational[1,792],Plus[-39000,Times[-17230,x],Times[13609,Power[x,2]],Times[-1262,
+Power[x,3]],Times[35,Power[x,4]]]]],Editable -> False],StandardForm],"Print",ExpressionUUID -> "74b94e94-4651-45f0-9da8-64e54cda3b10"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Approximate value of f at x=6 is \"","\[InvisibleSpace]",FractionBox[
+"1671","11"]}],SequenceForm["Approximate value of f at x=6 is ",Rational[1671,11]],
+Editable -> False],StandardForm],"Print",ExpressionUUID -> "7fc7325b-bcc4-46a4-af16-c85358af5c1d"],Cell[
+BoxData[
+SuperscriptBox["Null","3"],StandardForm],"Output",CellLabel -> "Out[1]= ",ExpressionUUID -> "bbf90a59-650a-4f43-b86a-b44fe9449715"]},
+Open],ExpressionUUID -> "9aab2cde-29a4-4982-bd94-0850a63b0afc"]},Open],ExpressionUUID -> "7a5b6bbf-48e1-483f-a347-432d1ec7658d"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "13. for Wolfram Cloud 1.61.2.3 (February 12, 2022)"]
